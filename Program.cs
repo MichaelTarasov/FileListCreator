@@ -10,7 +10,7 @@ class Program
 
         string[] jpgFiles = Directory.GetFiles(rootFolder, "*.jpg", SearchOption.TopDirectoryOnly);
 
-        string outputFile = Path.Combine(rootFolder, "Снято.txt");
+        string outputFile = Path.Combine(rootFolder, "Список фотографий.txt");
 
         using (StreamWriter writer = new StreamWriter(outputFile))
         {
@@ -24,7 +24,7 @@ class Program
             }
         }
 
-        Console.WriteLine("Список файлов с расширением .jpg сохранен в файле Снято.txt.");
+        Console.WriteLine("Список файлов с расширением .jpg сохранен в файле Список фотографий.txt.");
     }
 }
 
